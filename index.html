@@ -1,0 +1,1451 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>炫舞世家 夏柏 特别版 - 官方品牌视频门户 | 街舞影像内容生态</title>
+<meta name="description" content="炫舞世家夏柏特别版官方网站，街舞品牌视频门户，汇集原创高清舞蹈影像、创作者社区、赛事报名与品牌故事，持续运营值得信赖的街舞内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a1a1f'/%3E%3Cpath d='M20 46 L32 16 L44 46' stroke='%23e2ff3a' stroke-width='5' fill='none' stroke-linejoin='round'/%3E%3Ccircle cx='32' cy='46' r='4' fill='%23e2ff3a'/%3E%3C/svg%3E">
+<style>
+:root{
+  --xx-night:#15151a;
+  --xx-panel:#1e1e26;
+  --xx-panel-2:#262630;
+  --xx-line:#33333f;
+  --xx-neon:#e2ff3a;
+  --xx-neon-soft:rgba(226,255,58,.14);
+  --xx-cyan:#3ad6ff;
+  --xx-magenta:#ff3a8c;
+  --xx-text:#ececf2;
+  --xx-sub:#a2a2b4;
+  --xx-radius:14px;
+  --xx-sticky:104px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:var(--xx-sticky)}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  background:var(--xx-night);
+  color:var(--xx-text);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img,svg{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+ul,ol{list-style:none}
+
+/* ---------- 吸顶区 ---------- */
+.xx-stickybar{position:sticky;top:0;z-index:60}
+.xx-announce{
+  background:linear-gradient(90deg,var(--xx-neon),#9dff5a 55%,var(--xx-cyan));
+  color:#101014;
+  font-size:13px;
+  font-weight:600;
+}
+.xx-announce-inner{
+  max-width:1240px;margin:0 auto;padding:8px 20px;
+  display:flex;gap:14px;align-items:center;
+  overflow-x:auto;white-space:nowrap;
+  scrollbar-width:none;
+}
+.xx-announce-inner::-webkit-scrollbar{display:none}
+.xx-announce b{font-weight:800}
+.xx-announce .xx-ann-item{display:inline-flex;gap:6px;align-items:center}
+.xx-announce .xx-dot{width:5px;height:5px;border-radius:50%;background:#101014;opacity:.55;flex:0 0 auto}
+
+.xx-header{
+  background:rgba(21,21,26,.94);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--xx-line);
+}
+.xx-header-inner{
+  max-width:1240px;margin:0 auto;padding:12px 20px;
+  display:flex;align-items:center;gap:22px;
+}
+.xx-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.xx-logo-mark{
+  width:38px;height:38px;border-radius:10px;flex:0 0 auto;
+  background:linear-gradient(140deg,var(--xx-neon),var(--xx-cyan));
+  display:grid;place-items:center;color:#101014;font-weight:900;font-size:17px;
+  letter-spacing:-.5px;
+}
+.xx-logo-text{display:flex;flex-direction:column;line-height:1.2}
+.xx-logo-text strong{font-size:16px;letter-spacing:.5px}
+.xx-logo-text span{font-size:11px;color:var(--xx-sub);letter-spacing:2px}
+.xx-nav{display:flex;gap:4px;margin-left:8px;flex-wrap:wrap}
+.xx-nav a{
+  font-size:14px;color:var(--xx-sub);padding:7px 12px;border-radius:8px;
+  transition:.2s;white-space:nowrap;
+}
+.xx-nav a:hover{color:var(--xx-text);background:var(--xx-panel-2)}
+.xx-header-tools{margin-left:auto;display:flex;align-items:center;gap:10px}
+.xx-search{position:relative;display:flex;align-items:center}
+.xx-search input{
+  width:190px;background:var(--xx-panel-2);border:1px solid var(--xx-line);
+  border-radius:999px;padding:8px 36px 8px 14px;color:var(--xx-text);font-size:13px;
+  outline:none;transition:.25s;
+}
+.xx-search input:focus{border-color:var(--xx-neon);width:230px;background:#2c2c38}
+.xx-search button{
+  position:absolute;right:4px;top:50%;transform:translateY(-50%);
+  width:28px;height:28px;border-radius:50%;display:grid;place-items:center;
+  color:var(--xx-sub);font-size:14px;
+}
+.xx-search button:hover{color:var(--xx-neon)}
+.xx-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:6px;
+  border-radius:999px;font-size:13.5px;font-weight:600;padding:9px 18px;
+  transition:.2s;white-space:nowrap;
+}
+.xx-btn-neon{background:var(--xx-neon);color:#101014}
+.xx-btn-neon:hover{background:#f0ff7d;transform:translateY(-1px)}
+.xx-btn-ghost{border:1px solid var(--xx-line);color:var(--xx-text)}
+.xx-btn-ghost:hover{border-color:var(--xx-neon);color:var(--xx-neon)}
+.xx-burger{display:none;width:40px;height:40px;border-radius:10px;border:1px solid var(--xx-line);place-items:center}
+.xx-burger span{display:block;width:18px;height:2px;background:var(--xx-text);position:relative}
+.xx-burger span::before,.xx-burger span::after{content:"";position:absolute;left:0;width:18px;height:2px;background:var(--xx-text)}
+.xx-burger span::before{top:-6px}
+.xx-burger span::after{top:6px}
+.xx-mobile-nav{display:none;border-top:1px solid var(--xx-line);background:var(--xx-panel)}
+.xx-mobile-nav.open{display:block}
+.xx-mobile-nav ul{padding:10px 20px 16px;display:grid;gap:2px}
+.xx-mobile-nav a{display:block;padding:11px 12px;border-radius:10px;font-size:14.5px;color:var(--xx-sub)}
+.xx-mobile-nav a:hover{background:var(--xx-panel-2);color:var(--xx-text)}
+.xx-search-feedback{
+  max-width:1240px;margin:0 auto;padding:0 20px 10px;font-size:13px;color:var(--xx-neon);display:none;
+}
+.xx-search-feedback.show{display:block}
+
+/* ---------- 通用容器 ---------- */
+.xx-wrap{max-width:1240px;margin:0 auto;padding:0 20px}
+.xx-section{padding:64px 0}
+.xx-section-head{margin-bottom:34px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.xx-eyebrow{
+  font-size:12px;letter-spacing:3px;color:var(--xx-neon);font-weight:700;
+  display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;
+}
+.xx-eyebrow::before{content:"";width:22px;height:2px;background:var(--xx-neon);display:inline-block}
+.xx-section h2{font-size:30px;line-height:1.3;letter-spacing:-.5px;font-weight:800}
+.xx-section h2 em{font-style:normal;color:var(--xx-neon)}
+.xx-section-desc{color:var(--xx-sub);font-size:14.5px;max-width:560px}
+
+/* ---------- 首屏 5:5 ---------- */
+.xx-hero{
+  padding:52px 0 64px;
+  background:
+    radial-gradient(900px 420px at 12% -8%,rgba(226,255,58,.10),transparent 62%),
+    radial-gradient(760px 420px at 92% 10%,rgba(58,214,255,.10),transparent 60%);
+  border-bottom:1px solid var(--xx-line);
+}
+.xx-hero-grid{display:grid;grid-template-columns:5fr 5fr;gap:48px;align-items:center}
+.xx-hero-badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  border:1px solid rgba(226,255,58,.4);background:var(--xx-neon-soft);color:var(--xx-neon);
+  padding:6px 14px;border-radius:999px;letter-spacing:1px;margin-bottom:20px;
+}
+.xx-hero h1{font-size:clamp(38px,5.2vw,62px);line-height:1.06;letter-spacing:-2px;font-weight:900;margin-bottom:18px}
+.xx-hero h1 .xx-h1-accent{
+  display:block;color:transparent;
+  background:linear-gradient(100deg,var(--xx-neon),var(--xx-cyan) 70%);
+  -webkit-background-clip:text;background-clip:text;
+}
+.xx-hero-lead{font-size:16px;color:#c6c6d6;max-width:520px;margin-bottom:22px}
+.xx-hero-intro{
+  font-size:14px;color:var(--xx-sub);border-left:2px solid var(--xx-neon);
+  padding-left:16px;margin-bottom:26px;max-width:540px;
+}
+.xx-hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.xx-hero-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;border-top:1px solid var(--xx-line);padding-top:22px;max-width:560px}
+.xx-stat strong{display:block;font-size:26px;font-weight:900;letter-spacing:-1px;color:var(--xx-text)}
+.xx-stat strong i{font-style:normal;font-size:13px;color:var(--xx-neon);margin-left:2px}
+.xx-stat span{font-size:12.5px;color:var(--xx-sub)}
+.xx-hero-visual{position:relative}
+.xx-hero-figure{
+  border-radius:20px;overflow:hidden;border:1px solid var(--xx-line);
+  box-shadow:0 24px 60px -24px rgba(0,0,0,.9);
+  aspect-ratio:16/12;background:var(--xx-panel);
+}
+.xx-hero-figure img{width:100%;height:100%;object-fit:cover}
+.xx-hero-tag{
+  position:absolute;bottom:18px;left:18px;right:18px;
+  background:rgba(16,16,20,.82);backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.12);border-radius:12px;
+  padding:12px 14px;display:flex;align-items:center;gap:12px;
+}
+.xx-play{
+  width:38px;height:38px;border-radius:50%;flex:0 0 auto;
+  background:var(--xx-neon);color:#101014;display:grid;place-items:center;font-size:13px;
+  box-shadow:0 0 0 0 rgba(226,255,58,.5);animation:xx-pulse 2.6s infinite;
+}
+@keyframes xx-pulse{0%{box-shadow:0 0 0 0 rgba(226,255,58,.42)}70%{box-shadow:0 0 0 14px rgba(226,255,58,0)}100%{box-shadow:0 0 0 0 rgba(226,255,58,0)}}
+.xx-hero-tag-text strong{display:block;font-size:13.5px}
+.xx-hero-tag-text span{font-size:12px;color:var(--xx-sub)}
+
+/* ---------- 公告/正文块 ---------- */
+.xx-card{
+  background:var(--xx-panel);border:1px solid var(--xx-line);border-radius:var(--xx-radius);
+  padding:22px;transition:.25s;
+}
+.xx-card:hover{border-color:rgba(226,255,58,.42);transform:translateY(-3px)}
+
+/* ---------- 热点/焦点 + 视频列表 布局：一幅重点大图 + 文字列表 ---------- */
+.xx-focus-grid{display:grid;grid-template-columns:6fr 4fr;gap:26px;align-items:start}
+.xx-focus-main{
+  position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--xx-line);
+  background:var(--xx-panel);
+}
+.xx-focus-main img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.xx-focus-body{padding:24px}
+.xx-focus-body .xx-tags{margin-bottom:12px}
+.xx-focus-body h3{font-size:23px;line-height:1.35;font-weight:800;margin-bottom:10px;letter-spacing:-.4px}
+.xx-focus-body p{font-size:14px;color:var(--xx-sub)}
+.xx-meta{display:flex;gap:14px;flex-wrap:wrap;font-size:12.5px;color:var(--xx-sub);margin-top:14px;align-items:center}
+.xx-tags{display:flex;gap:8px;flex-wrap:wrap}
+.xx-tag{
+  font-size:11.5px;padding:3px 10px;border-radius:999px;
+  background:var(--xx-panel-2);color:var(--xx-sub);border:1px solid var(--xx-line);
+}
+.xx-tag-hot{background:var(--xx-neon-soft);color:var(--xx-neon);border-color:rgba(226,255,58,.35)}
+.xx-videolist{display:grid;gap:14px}
+.xx-video-item{
+  display:grid;grid-template-columns:64px 1fr;gap:14px;
+  background:var(--xx-panel);border:1px solid var(--xx-line);border-radius:12px;padding:14px;
+  transition:.2s;
+}
+.xx-video-item:hover{border-color:rgba(58,214,255,.45);background:var(--xx-panel-2)}
+.xx-video-thumb{
+  width:64px;height:64px;border-radius:10px;overflow:hidden;flex:0 0 auto;background:var(--xx-panel-2);
+}
+.xx-video-thumb img{width:100%;height:100%;object-fit:cover}
+.xx-video-item h4{font-size:15px;font-weight:700;line-height:1.4;margin-bottom:4px}
+.xx-video-item p{font-size:12.5px;color:var(--xx-sub);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.xx-video-item .xx-meta{margin-top:8px;gap:10px;font-size:11.5px}
+
+/* ---------- 文字视频条目（无图） ---------- */
+.xx-textlist{display:grid;gap:12px}
+.xx-text-item{
+  display:flex;align-items:flex-start;gap:16px;padding:16px 18px;
+  border-radius:12px;border:1px solid var(--xx-line);background:var(--xx-panel);
+  transition:.2s;
+}
+.xx-text-item:hover{background:var(--xx-panel-2);border-color:rgba(226,255,58,.35)}
+.xx-text-index{
+  font-size:13px;font-weight:800;color:var(--xx-neon);font-variant-numeric:tabular-nums;
+  min-width:28px;line-height:1.6;
+}
+.xx-text-item-body{flex:1;min-width:0}
+.xx-text-item-body h4{font-size:15.5px;font-weight:700;margin-bottom:5px;line-height:1.4}
+.xx-text-item-body p{font-size:13px;color:var(--xx-sub)}
+.xx-text-item-body .xx-meta{margin-top:7px}
+.xx-item-actions{display:flex;gap:8px;flex:0 0 auto;align-items:center;flex-wrap:wrap}
+.xx-mini-btn{
+  font-size:12px;padding:5px 12px;border-radius:999px;border:1px solid var(--xx-line);
+  color:var(--xx-sub);transition:.2s;white-space:nowrap;
+}
+.xx-mini-btn:hover{border-color:var(--xx-neon);color:var(--xx-neon)}
+.xx-mini-btn.xx-liked{color:var(--xx-neon);border-color:rgba(226,255,58,.5);background:var(--xx-neon-soft)}
+.xx-mini-btn.xx-faved{color:var(--xx-magenta);border-color:rgba(255,58,140,.5);background:rgba(255,58,140,.12)}
+
+/* ---------- 专题 ---------- */
+.xx-topic-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.xx-topic{
+  border:1px solid var(--xx-line);border-radius:16px;background:var(--xx-panel);
+  overflow:hidden;display:flex;flex-direction:column;transition:.25s;
+}
+.xx-topic:hover{border-color:rgba(226,255,58,.4);transform:translateY(-4px)}
+.xx-topic-top{padding:20px 20px 0}
+.xx-topic-status{font-size:11.5px;color:var(--xx-cyan);border:1px solid rgba(58,214,255,.35);padding:2px 9px;border-radius:999px;display:inline-block;margin-bottom:10px}
+.xx-topic h3{font-size:18px;font-weight:800;margin-bottom:8px;letter-spacing:-.3px}
+.xx-topic>p,.xx-topic-top p{font-size:13px;color:var(--xx-sub)}
+.xx-topic ul{padding:16px 20px 20px;display:grid;gap:9px;margin-top:auto}
+.xx-topic ul li{font-size:13px;color:#c9c9d8;display:flex;gap:8px;line-height:1.5}
+.xx-topic ul li::before{content:"▸";color:var(--xx-neon);flex:0 0 auto}
+
+/* ---------- 作者区：双列简介 ---------- */
+.xx-author-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.xx-author{
+  display:grid;grid-template-columns:56px 1fr;gap:16px;
+  background:var(--xx-panel);border:1px solid var(--xx-line);border-radius:14px;padding:20px;
+  transition:.22s;
+}
+.xx-author:hover{border-color:rgba(58,214,255,.4);background:var(--xx-panel-2)}
+.xx-avatar{
+  width:56px;height:56px;border-radius:50%;flex:0 0 auto;display:grid;place-items:center;
+  font-weight:900;font-size:19px;color:#101014;letter-spacing:-1px;
+  border:2px solid rgba(255,255,255,.14);
+}
+.xx-av-a{background:linear-gradient(140deg,#e2ff3a,#7dffa8)}
+.xx-av-b{background:linear-gradient(140deg,#3ad6ff,#7d8bff)}
+.xx-av-c{background:linear-gradient(140deg,#ff3a8c,#ffb03a)}
+.xx-av-d{background:linear-gradient(140deg,#b46bff,#3ad6ff)}
+.xx-av-e{background:linear-gradient(140deg,#ffd23a,#ff6b3a)}
+.xx-av-f{background:linear-gradient(140deg,#4dffd2,#3a8cff)}
+.xx-author h3{font-size:16px;font-weight:800;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.xx-author h3 span{font-size:11px;font-weight:600;color:var(--xx-neon);background:var(--xx-neon-soft);padding:2px 8px;border-radius:999px}
+.xx-author .xx-author-field{font-size:12.5px;color:var(--xx-cyan);margin:3px 0 8px}
+.xx-author p{font-size:13px;color:var(--xx-sub);line-height:1.65}
+.xx-author-foot{display:flex;gap:14px;margin-top:10px;font-size:12px;color:var(--xx-sub);flex-wrap:wrap;align-items:center}
+.xx-author-foot button{font-size:12px;color:var(--xx-neon);font-weight:600}
+
+/* ---------- 榜单 + 评价 ---------- */
+.xx-duo{display:grid;grid-template-columns:5fr 7fr;gap:26px;align-items:start}
+.xx-rank{border:1px solid var(--xx-line);border-radius:16px;background:var(--xx-panel);overflow:hidden}
+.xx-rank-head{padding:18px 20px;border-bottom:1px solid var(--xx-line);display:flex;justify-content:space-between;align-items:center;gap:10px}
+.xx-rank-head h3{font-size:16px;font-weight:800}
+.xx-rank-tabs{display:flex;gap:4px;background:var(--xx-panel-2);padding:3px;border-radius:999px}
+.xx-rank-tabs button{font-size:11.5px;padding:5px 10px;border-radius:999px;color:var(--xx-sub);transition:.2s}
+.xx-rank-tabs button.on{background:var(--xx-neon);color:#101014;font-weight:700}
+.xx-rank-list{padding:8px 10px 12px;display:grid;gap:2px}
+.xx-rank-item{display:grid;grid-template-columns:24px 1fr auto;gap:10px;align-items:center;padding:10px;border-radius:9px;transition:.18s}
+.xx-rank-item:hover{background:var(--xx-panel-2)}
+.xx-rank-no{font-size:13px;font-weight:900;color:var(--xx-sub);font-variant-numeric:tabular-nums}
+.xx-rank-item:nth-child(1) .xx-rank-no{color:var(--xx-neon)}
+.xx-rank-item:nth-child(2) .xx-rank-no{color:var(--xx-cyan)}
+.xx-rank-item:nth-child(3) .xx-rank-no{color:var(--xx-magenta)}
+.xx-rank-name{font-size:13.5px;line-height:1.35}
+.xx-rank-name small{display:block;font-size:11.5px;color:var(--xx-sub);margin-top:2px}
+.xx-rank-val{font-size:12px;color:var(--xx-neon);font-variant-numeric:tabular-nums;white-space:nowrap}
+
+.xx-reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.xx-review{
+  background:var(--xx-panel);border:1px solid var(--xx-line);border-radius:12px;padding:16px;
+  display:flex;flex-direction:column;gap:8px;transition:.22s;
+}
+.xx-review:hover{border-color:rgba(255,58,140,.4)}
+.xx-review-head{display:flex;align-items:center;gap:10px}
+.xx-review-head .xx-avatar{width:34px;height:34px;font-size:13px;border-width:1px}
+.xx-review-head strong{font-size:13px}
+.xx-review-head span{font-size:11px;color:var(--xx-sub);margin-left:auto}
+.xx-review p{font-size:13px;color:#cfcfdd;line-height:1.65}
+.xx-stars{color:var(--xx-neon);font-size:12px;letter-spacing:1px}
+
+/* ---------- 解析长文 ---------- */
+.xx-article{
+  background:linear-gradient(180deg,var(--xx-panel),rgba(30,30,38,.55));
+  border:1px solid var(--xx-line);border-radius:18px;padding:36px;
+}
+.xx-article h2{margin-bottom:8px}
+.xx-article-lead{color:var(--xx-sub);font-size:14.5px;margin-bottom:28px;max-width:760px}
+.xx-article-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:32px;align-items:start}
+.xx-article h3{font-size:17px;font-weight:800;margin:22px 0 10px;color:var(--xx-text);display:flex;gap:8px;align-items:baseline}
+.xx-article h3::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--xx-neon);flex:0 0 auto;transform:translateY(-2px)}
+.xx-article h3:first-child{margin-top:0}
+.xx-article p{font-size:14px;color:#bcbccd;line-height:1.9;margin-bottom:12px;text-align:justify}
+.xx-article-figure{border-radius:14px;overflow:hidden;border:1px solid var(--xx-line);margin-bottom:16px}
+.xx-article-figure img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.xx-article-note{font-size:12.5px;color:var(--xx-sub);border-left:2px solid var(--xx-cyan);padding-left:12px;margin-top:6px}
+
+/* ---------- 动态 / 合作 / FAQ / 投稿 ---------- */
+.xx-tri{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.xx-news{display:grid;gap:12px}
+.xx-news-item{padding:16px 18px;border-radius:12px;border:1px solid var(--xx-line);background:var(--xx-panel);transition:.2s}
+.xx-news-item:hover{border-color:rgba(226,255,58,.35)}
+.xx-news-item time{font-size:11.5px;color:var(--xx-neon);letter-spacing:.5px}
+.xx-news-item h4{font-size:14.5px;font-weight:700;margin:5px 0 4px;line-height:1.45}
+.xx-news-item p{font-size:12.5px;color:var(--xx-sub)}
+.xx-partner-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.xx-partner{
+  border:1px solid var(--xx-line);border-radius:12px;padding:16px;background:var(--xx-panel);
+  display:flex;flex-direction:column;gap:4px;transition:.2s;
+}
+.xx-partner:hover{border-color:rgba(58,214,255,.4)}
+.xx-partner strong{font-size:14px}
+.xx-partner span{font-size:12px;color:var(--xx-sub)}
+.xx-faq{display:grid;gap:10px}
+.xx-faq details{border:1px solid var(--xx-line);border-radius:12px;background:var(--xx-panel);overflow:hidden}
+.xx-faq summary{
+  cursor:pointer;list-style:none;padding:14px 18px;font-size:14px;font-weight:600;
+  display:flex;justify-content:space-between;gap:12px;align-items:center;transition:.2s;
+}
+.xx-faq summary::-webkit-details-marker{display:none}
+.xx-faq summary::after{content:"+";color:var(--xx-neon);font-size:17px;font-weight:400;flex:0 0 auto}
+.xx-faq details[open] summary::after{content:"−"}
+.xx-faq details[open] summary{color:var(--xx-neon)}
+.xx-faq details p{padding:0 18px 16px;font-size:13px;color:var(--xx-sub);line-height:1.75}
+
+.xx-cta{
+  border-radius:18px;padding:34px;
+  background:
+    radial-gradient(600px 240px at 88% -20%,rgba(226,255,58,.16),transparent 60%),
+    linear-gradient(120deg,#20202a,#1a1a22);
+  border:1px solid var(--xx-line);
+  display:grid;grid-template-columns:1.3fr 1fr;gap:26px;align-items:center;
+}
+.xx-cta h2{font-size:26px;font-weight:800;letter-spacing:-.5px;margin-bottom:10px}
+.xx-cta p{font-size:14px;color:var(--xx-sub)}
+.xx-cta-actions{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+
+/* ---------- 页脚 ---------- */
+.xx-footer{border-top:1px solid var(--xx-line);background:#101014;padding:48px 0 26px;margin-top:20px}
+.xx-footer-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;margin-bottom:34px}
+.xx-footer-brand p{font-size:13px;color:var(--xx-sub);margin-top:12px;max-width:320px;line-height:1.8}
+.xx-footer h4{font-size:13px;font-weight:700;letter-spacing:1px;color:#d8d8e6;margin-bottom:12px}
+.xx-footer ul{display:grid;gap:8px}
+.xx-footer ul a,.xx-footer ul li{font-size:12.5px;color:var(--xx-sub);transition:.2s}
+.xx-footer ul a:hover{color:var(--xx-neon)}
+.xx-footer-bottom{
+  border-top:1px solid var(--xx-line);padding-top:20px;display:flex;justify-content:space-between;
+  gap:14px;flex-wrap:wrap;font-size:12px;color:#72728a;
+}
+.xx-footer-bottom a{color:#72728a}
+.xx-footer-bottom a:hover{color:var(--xx-neon)}
+
+/* ---------- Toast & 回到顶部 ---------- */
+.xx-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,24px);
+  background:var(--xx-neon);color:#101014;font-size:13px;font-weight:700;
+  padding:10px 20px;border-radius:999px;opacity:0;pointer-events:none;transition:.3s;z-index:200;
+  box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+.xx-toast.show{opacity:1;transform:translate(-50%,0)}
+.xx-top{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  background:var(--xx-panel-2);border:1px solid var(--xx-line);color:var(--xx-text);
+  display:grid;place-items:center;font-size:16px;z-index:120;opacity:0;pointer-events:none;transition:.3s;
+}
+.xx-top.show{opacity:1;pointer-events:auto}
+.xx-top:hover{border-color:var(--xx-neon);color:var(--xx-neon)}
+
+/* ---------- 弹窗 ---------- */
+.xx-modal{
+  position:fixed;inset:0;background:rgba(8,8,12,.78);backdrop-filter:blur(4px);
+  display:none;place-items:center;z-index:300;padding:20px;
+}
+.xx-modal.open{display:grid}
+.xx-modal-box{
+  width:100%;max-width:440px;background:var(--xx-panel);border:1px solid var(--xx-line);
+  border-radius:16px;padding:26px;position:relative;
+}
+.xx-modal-box h3{font-size:19px;font-weight:800;margin-bottom:6px}
+.xx-modal-box>p{font-size:13px;color:var(--xx-sub);margin-bottom:16px}
+.xx-modal-close{position:absolute;right:14px;top:12px;font-size:20px;color:var(--xx-sub);line-height:1}
+.xx-modal-close:hover{color:var(--xx-neon)}
+.xx-field{margin-bottom:12px}
+.xx-field label{display:block;font-size:12.5px;color:var(--xx-sub);margin-bottom:5px}
+.xx-field input,.xx-field textarea{
+  width:100%;background:var(--xx-panel-2);border:1px solid var(--xx-line);border-radius:9px;
+  padding:9px 12px;color:var(--xx-text);font-size:13.5px;outline:none;font-family:inherit;resize:vertical;
+}
+.xx-field input:focus,.xx-field textarea:focus{border-color:var(--xx-neon)}
+.xx-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:16px}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1080px){
+  .xx-hero-grid{grid-template-columns:1fr;gap:34px}
+  .xx-focus-grid,.xx-duo,.xx-article-grid,.xx-cta{grid-template-columns:1fr}
+  .xx-topic-grid,.xx-tri{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .xx-footer-grid{grid-template-columns:1fr 1fr}
+  .xx-cta-actions{justify-content:flex-start}
+}
+@media (max-width:860px){
+  .xx-nav,.xx-header-tools .xx-search,.xx-header-tools .xx-btn-ghost{display:none}
+  .xx-burger{display:grid}
+  .xx-hero-stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .xx-hero{padding:36px 0 44px}
+  .xx-section{padding:46px 0}
+  .xx-section h2{font-size:25px}
+  .xx-article{padding:24px}
+}
+@media (max-width:640px){
+  .xx-topic-grid,.xx-tri,.xx-author-grid,.xx-reviews,.xx-partner-grid,.xx-footer-grid{grid-template-columns:1fr}
+  .xx-hero-stats{grid-template-columns:1fr;gap:14px}
+  .xx-stat{display:flex;align-items:baseline;gap:10px;border-bottom:1px dashed var(--xx-line);padding-bottom:10px}
+  .xx-stat strong{font-size:22px}
+  .xx-text-item{flex-wrap:wrap}
+  .xx-item-actions{width:100%;justify-content:flex-end}
+  .xx-cta{padding:24px}
+  .xx-search input{width:150px}
+  .xx-search input:focus{width:170px}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- S1 公告条 + 页头（吸顶） -->
+<div class="xx-stickybar">
+  <div class="xx-announce">
+    <div class="xx-announce-inner">
+      <span class="xx-ann-item"><b>官方发布</b> 夏柏特别版 Vol.07「破拍」高清新片已上线</span>
+      <span class="xx-dot"></span>
+      <span class="xx-ann-item">2026 冬季新人赛报名开放，12 月 6 日截止</span>
+      <span class="xx-dot"></span>
+      <span class="xx-ann-item">创作者扶持计划第二期开放 60 个名额</span>
+      <span class="xx-dot"></span>
+      <span class="xx-ann-item">专题《城市地胶》更新至第 5 集</span>
+    </div>
+  </div>
+
+  <header class="xx-header">
+    <div class="xx-header-inner">
+      <a href="#top" class="xx-logo" aria-label="炫舞世家夏柏特别版首页">
+        <span class="xx-logo-mark">炫</span>
+        <span class="xx-logo-text">
+          <strong>炫舞世家</strong>
+          <span>夏柏特别版</span>
+        </span>
+      </a>
+
+      <nav class="xx-nav" aria-label="主导航">
+        <a href="#focus">焦点</a>
+        <a href="#videos">视频</a>
+        <a href="#topics">专题</a>
+        <a href="#authors">创作者</a>
+        <a href="#rank">榜单</a>
+        <a href="#story">深度解析</a>
+        <a href="#updates">企业动态</a>
+        <a href="#faq">常见问题</a>
+      </nav>
+
+      <div class="xx-header-tools">
+        <div class="xx-search">
+          <input id="xx-search-input" type="search" placeholder="搜索舞种、创作者、专题" aria-label="站内搜索">
+          <button id="xx-search-btn" type="button" aria-label="搜索">⌕</button>
+        </div>
+        <button class="xx-btn xx-btn-ghost" type="button" data-xx-open="submit">投稿</button>
+        <button class="xx-btn xx-btn-neon" type="button" data-xx-open="join">加入社区</button>
+        <button class="xx-burger" id="xx-burger" type="button" aria-label="展开菜单" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+
+    <div class="xx-mobile-nav" id="xx-mobile-nav">
+      <ul>
+        <li><a href="#focus">焦点内容</a></li>
+        <li><a href="#videos">热门视频</a></li>
+        <li><a href="#topics">专题企划</a></li>
+        <li><a href="#authors">创作者矩阵</a></li>
+        <li><a href="#rank">数据榜单</a></li>
+        <li><a href="#reviews">用户评价</a></li>
+        <li><a href="#story">品牌深度解析</a></li>
+        <li><a href="#updates">企业动态</a></li>
+        <li><a href="#faq">常见问题</a></li>
+      </ul>
+    </div>
+    <div class="xx-search-feedback" id="xx-search-feedback" role="status" aria-live="polite"></div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- S2 品牌首屏 -->
+  <section class="xx-hero" aria-labelledby="xx-hero-title">
+    <div class="xx-wrap xx-hero-grid">
+      <div>
+        <span class="xx-hero-badge">官方网站 · 官方发布 · 原创正版</span>
+        <h1 id="xx-hero-title">炫舞世家 夏柏 特别版<span class="xx-h1-accent">街舞影像 内容生态</span></h1>
+        <p class="xx-hero-lead">以舞者为圆心，以影像为语言。炫舞世家夏柏特别版是街舞领域的品牌视频门户，把练习室里的汗水、地胶上的足音与比赛现场的心跳，做成可被反复观看的高清内容。</p>
+        <p class="xx-hero-intro">炫舞世家官方网站深耕街舞垂直领域六年，围绕原创舞蹈影像、创作者社区与赛事内容持续运营。企业以夏柏特别版为核心厂牌，提供专业拍摄指导、正版音乐授权与分发支持，让每一支作品都获得应有的品质与口碑。我们相信真实的身体表达能产生持久的影响力，也愿与创作者一同成长、陪伴彼此。</p>
+        <div class="xx-hero-actions">
+          <a class="xx-btn xx-btn-neon" href="#videos">观看本期特别版</a>
+          <a class="xx-btn xx-btn-ghost" href="#story">阅读品牌故事</a>
+          <button class="xx-btn xx-btn-ghost" type="button" data-xx-open="submit">成为创作者</button>
+        </div>
+        <div class="xx-hero-stats">
+          <div class="xx-stat"><strong>1,286<i>支</i></strong><span>原创高清作品入库</span></div>
+          <div class="xx-stat"><strong>37.4<i>万</i></strong><span>社区注册创作者</span></div>
+          <div class="xx-stat"><strong>92<i>%</i></strong><span>用户口碑好评率</span></div>
+        </div>
+      </div>
+
+      <div class="xx-hero-visual">
+        <figure class="xx-hero-figure">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23181820'/%3E%3Cstop offset='1' stop-color='%232a2c3a'/%3E%3C/linearGradient%3E%3ClinearGradient id='glow' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e2ff3a'/%3E%3Cstop offset='1' stop-color='%233ad6ff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='600' fill='url(%23bg)'/%3E%3Ccircle cx='640' cy='90' r='150' fill='%23e2ff3a' opacity='0.10'/%3E%3Ccircle cx='90' cy='520' r='180' fill='%233ad6ff' opacity='0.10'/%3E%3Cg stroke='%23e2ff3a' stroke-width='3' opacity='0.55' fill='none'%3E%3Cpath d='M120 470 L210 250 L330 470'/%3E%3Cpath d='M210 250 L290 380'/%3E%3C/g%3E%3Cg fill='%23ececf2'%3E%3Cpath d='M400 190 c18 0 32 14 32 32 s-14 32 -32 32 -32 -14 -32 -32 14 -32 32 -32 Z'/%3E%3Cpath d='M378 268 q22 -14 44 0 l12 70 -26 6 -10 -44 -10 44 -26 -6 Z'/%3E%3Cpath d='M372 344 l22 76 10 -4 -12 -74 Z'/%3E%3Cpath d='M428 344 l-14 100 -12 -2 14 -102 Z'/%3E%3C/g%3E%3Cg fill='url(%23glow)'%3E%3Crect x='470' y='300' width='230' height='4' rx='2'/%3E%3Crect x='470' y='322' width='170' height='4' rx='2'/%3E%3Crect x='470' y='344' width='200' height='4' rx='2'/%3E%3C/g%3E%3Cg stroke='%233ad6ff' stroke-width='2' opacity='0.6' fill='none'%3E%3Cpath d='M70 120 h120 v70'/%3E%3Cpath d='M70 120 v40'/%3E%3Cpath d='M700 470 h-90 v-60'/%3E%3C/g%3E%3Cg fill='%23a2a2b4' opacity='0.8'%3E%3Crect x='520' y='420' width='8' height='90'/%3E%3Crect x='536' y='440' width='8' height='70'/%3E%3Crect x='552' y='410' width='8' height='100'/%3E%3Crect x='568' y='452' width='8' height='58'/%3E%3C/g%3E%3Ctext x='60' y='70' font-family='Arial' font-size='20' fill='%23e2ff3a' letter-spacing='6'%3EXUANWU%3C/text%3E%3C/svg%3E" alt="炫舞世家夏柏特别版首屏主视觉：舞者剪影与节拍波形构成的城市舞台" width="800" height="600">
+        </figure>
+        <div class="xx-hero-tag">
+          <span class="xx-play" aria-hidden="true">▶</span>
+          <span class="xx-hero-tag-text">
+            <strong>夏柏特别版 Vol.07《破拍》官方正片</strong>
+            <span>4K 高清 · 12 分 36 秒 · 播放 86.2 万</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 焦点 + 视频列表 -->
+  <section class="xx-section" id="focus" aria-labelledby="xx-focus-title">
+    <div class="xx-wrap">
+      <div class="xx-section-head">
+        <div>
+          <span class="xx-eyebrow">FOCUS / 焦点内容</span>
+          <h2 id="xx-focus-title">炫舞世家本期<em>重点推荐</em></h2>
+        </div>
+        <p class="xx-section-desc">编辑部从近三十天的投稿中选出一支主推作品与四条文字推荐，覆盖编舞、教学、城市探索与幕后记录。</p>
+      </div>
+
+      <div class="xx-focus-grid">
+        <article class="xx-focus-main">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 960 540'%3E%3Cdefs%3E%3ClinearGradient id='f1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2320202a'/%3E%3Cstop offset='1' stop-color='%23383a4c'/%3E%3C/linearGradient%3E%3ClinearGradient id='f2' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23ff3a8c'/%3E%3Cstop offset='1' stop-color='%23e2ff3a'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='960' height='540' fill='url(%23f1)'/%3E%3Cg opacity='0.5' stroke='%23ffffff' stroke-width='1'%3E%3Cpath d='M0 420 H960'/%3E%3Cpath d='M0 460 H960'/%3E%3C/g%3E%3Cg fill='%23ececf2'%3E%3Ccircle cx='300' cy='160' r='34'/%3E%3Cpath d='M268 206 q32 -18 64 0 l16 96 -36 8 -12 -58 -12 58 -36 -8 Z'/%3E%3Cpath d='M262 300 l26 110 14 -4 -16 -108 Z'/%3E%3Cpath d='M330 300 l-20 140 -16 -2 20 -142 Z'/%3E%3C/g%3E%3Cg fill='%23a2a2b4' opacity='0.55'%3E%3Ccircle cx='600' cy='210' r='26'/%3E%3Cpath d='M576 244 q24 -12 48 0 l12 70 -27 6 -9 -44 -9 44 -27 -6 Z'/%3E%3C/g%3E%3Cg stroke='url(%23f2)' stroke-width='6' fill='none' stroke-linecap='round'%3E%3Cpath d='M420 90 q60 70 0 140 q-60 70 0 140' opacity='0.9'/%3E%3C/g%3E%3Cg fill='%23e2ff3a'%3E%3Crect x='700' y='110' width='170' height='5' rx='2'/%3E%3Crect x='700' y='132' width='120' height='5' rx='2'/%3E%3Crect x='700' y='154' width='150' height='5' rx='2'/%3E%3C/g%3E%3Ctext x='700' y='210' font-family='Arial' font-size='16' fill='%23a2a2b4' letter-spacing='3'%3EVOL.07%3C/text%3E%3Ctext x='700' y='250' font-family='Arial' font-size='44' fill='%23ececf2' font-weight='bold'%3EBREAK%3C/text%3E%3C/svg%3E" alt="夏柏特别版Vol.07破拍正片封面：双人舞者在节拍曲线前定格" width="960" height="540">
+          <div class="xx-focus-body">
+            <div class="xx-tags">
+              <span class="xx-tag xx-tag-hot">官方发布</span>
+              <span class="xx-tag">编舞作品</span>
+              <span class="xx-tag">4K 高清</span>
+            </div>
+            <h3>Vol.07《破拍》：当夏柏把整条街的鼓点收进一支舞</h3>
+            <p>夏柏特别版第七支年度正片，取景于凌晨四点的旧工厂与清晨的过街天桥。全片用一条连续跟拍镜头完成七次队形切换，保留了地胶摩擦声与呼吸声作为原始音轨，是炫舞世家在原创影像语言上的一次正面挑战。</p>
+            <div class="xx-meta">
+              <span>作者：夏柏</span>
+              <span>播放 86.2 万</span>
+              <span>点赞 4.7 万</span>
+              <span>收藏 1.9 万</span>
+            </div>
+            <div class="xx-meta">
+              <button class="xx-mini-btn" type="button" data-xx-like>♡ 点赞 <b>47012</b></button>
+              <button class="xx-mini-btn" type="button" data-xx-fav>♡ 收藏</button>
+              <button class="xx-mini-btn" type="button" data-xx-copy>复制链接</button>
+            </div>
+          </div>
+        </article>
+
+        <div class="xx-videolist">
+          <article class="xx-video-item">
+            <div class="xx-video-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23232330'/%3E%3Ccircle cx='100' cy='78' r='24' fill='%23e2ff3a'/%3E%3Cpath d='M78 108 q22 -10 44 0 l10 60 -32 6 -10 -40 -10 40 -32 -6 Z' fill='%23ececf2'/%3E%3Cg stroke='%233ad6ff' stroke-width='3' opacity='0.7'%3E%3Cpath d='M30 30 h40 v24'/%3E%3Cpath d='M170 170 h-40 v-24'/%3E%3C/g%3E%3C/svg%3E" alt="教程封面：基础律动重心转移的分解动作示意" width="200" height="200">
+            </div>
+            <div>
+              <h4>律动入门第一课：重心转移的三个常见错误</h4>
+              <p>用一面镜子和两平方米空间就能练的分解教程，主讲夏柏体系下的重心控制。</p>
+              <div class="xx-meta"><span>阿岚</span><span>12.4 万播放</span><span>教程干货</span></div>
+            </div>
+          </article>
+
+          <article class="xx-video-item">
+            <div class="xx-video-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%231c2430'/%3E%3Cg fill='none' stroke='%233ad6ff' stroke-width='3'%3E%3Cpath d='M20 150 q30 -60 60 -20 q30 40 60 -30 q20 -30 40 10'/%3E%3Cpath d='M20 170 q30 -50 60 -10 q30 40 60 -20 q20 -26 40 8' opacity='0.55'/%3E%3C/g%3E%3Ccircle cx='150' cy='60' r='18' fill='%23ff3a8c' opacity='0.8'/%3E%3C/svg%3E" alt="城市探索封面：夜间地铁站台的节拍声波线" width="200" height="200">
+            </div>
+            <div>
+              <h4>在地铁末班车里跳完一支舞需要几步</h4>
+              <p>城市探索系列第七站，摄制组跟着四位舞者记录了三天通勤路线。</p>
+              <div class="xx-meta"><span>周屿</span><span>9.8 万播放</span><span>城市探索</span></div>
+            </div>
+          </article>
+
+          <article class="xx-video-item">
+            <div class="xx-video-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%23261c24'/%3E%3Crect x='30' y='40' width='140' height='90' rx='6' fill='none' stroke='%23ff3a8c' stroke-width='3'/%3E%3Cpath d='M30 70 h140' stroke='%23ff3a8c' stroke-width='2' opacity='0.6'/%3E%3Ccircle cx='100' cy='105' r='12' fill='%23e2ff3a'/%3E%3Cg fill='%23a2a2b4'%3E%3Crect x='56' y='152' width='88' height='6' rx='3'/%3E%3Crect x='76' y='166' width='48' height='6' rx='3'/%3E%3C/g%3E%3C/svg%3E" alt="创作幕后封面：剪辑时间线与监听耳机的合成图形" width="200" height="200">
+            </div>
+            <div>
+              <h4>一支成片背后：我们剪掉了 43 版草稿</h4>
+              <p>创作幕后记录，从选曲、走位到调色，完整还原一支特别版作品的诞生。</p>
+              <div class="xx-meta"><span>边录工作室</span><span>7.1 万播放</span><span>创作幕后</span></div>
+            </div>
+          </article>
+
+          <article class="xx-video-item">
+            <div class="xx-video-thumb">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%2320241c'/%3E%3Cg fill='%23e2ff3a' opacity='0.85'%3E%3Ccircle cx='64' cy='70' r='14'/%3E%3Ccircle cx='136' cy='70' r='14'/%3E%3Ccircle cx='64' cy='132' r='14'/%3E%3Ccircle cx='136' cy='132' r='14'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='2' opacity='0.45'%3E%3Cpath d='M78 70 h44'/%3E%3Cpath d='M78 132 h44'/%3E%3Cpath d='M64 84 v34'/%3E%3Cpath d='M136 84 v34'/%3E%3C/g%3E%3C/svg%3E" alt="人物访谈封面：四位舞者头像以连线构成访谈网络" width="200" height="200">
+            </div>
+            <div>
+              <h4>访谈：四个人聊了聊“被看见”有多难</h4>
+              <p>从练习生到独立创作者，关于坚持、收入与舞台归属的一次长谈。</p>
+              <div class="xx-meta"><span>沈禾</span><span>6.4 万播放</span><span>人物访谈</span></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S3 视频文字列表 -->
+  <section class="xx-section" id="videos" aria-labelledby="xx-videos-title" style="padding-top:0">
+    <div class="xx-wrap">
+      <div class="xx-section-head">
+        <div>
+          <span class="xx-eyebrow">VIDEOS / 热门视频</span>
+          <h2 id="xx-videos-title">炫舞世家<em>本周热门</em>影像</h2>
+        </div>
+        <p class="xx-section-desc">六条来自社区与官方的高清作品，覆盖成品舞、测评、行业观察与治愈影像。支持点赞、收藏与复制分享。</p>
+      </div>
+
+      <div class="xx-textlist">
+        <article class="xx-text-item">
+          <span class="xx-text-index">01</span>
+          <div class="xx-text-item-body">
+            <h4>成品舞《回声》：十人齐舞如何做到不抢拍</h4>
+            <p>团队排练四周的完整记录，附齐舞计时表与段落分工表，适合正在筹备团队赛的舞团参考。</p>
+            <div class="xx-meta"><span>标签：成品舞 · 团队编排</span><span>作者：夏柏</span><span>播放 32.6 万</span><span>点赞 2.1 万</span><span>收藏 8,406</span></div>
+          </div>
+          <div class="xx-item-actions">
+            <button class="xx-mini-btn" type="button" data-xx-like>♡ 点赞</button>
+            <button class="xx-mini-btn" type="button" data-xx-fav>♡ 收藏</button>
+          </div>
+        </article>
+
+        <article class="xx-text-item">
+          <span class="xx-text-index">02</span>
+          <div class="xx-text-item-body">
+            <h4>深度测评：五款练习室地胶的防滑与缓冲实测</h4>
+            <p>用测力计、慢镜头与三十次急停转身，给出一份可以直接抄作业的选购清单。</p>
+            <div class="xx-meta"><span>标签：深度测评 · 装备</span><span>作者：阿岚</span><span>播放 28.9 万</span><span>点赞 1.8 万</span><span>收藏 1.2 万</span></div>
+          </div>
+          <div class="xx-item-actions">
+            <button class="xx-mini-btn" type="button" data-xx-like>♡ 点赞</button>
+            <button class="xx-mini-btn" type="button" data-xx-fav>♡ 收藏</button>
+          </div>
+        </article>
+
+        <article class="xx-text-item">
+          <span class="xx-text-index">03</span>
+          <div class="xx-text-item-body">
+            <h4>在地文化：老街鼓队与电子乐的第一次合奏</h4>
+            <p>城市探索番外集。我们在祠堂前的空地上，让传统鼓点和电子节拍完成了一次对话。</p>
+            <div class="xx-meta"><span>标签：在地文化 · 城市探索</span><span>作者：周屿</span><span>播放 21.3 万</span><span>点赞 1.5 万</span><span>收藏 6,102</span></div>
+          </div>
+          <div class="xx-item-actions">
+            <button class="xx-mini-btn" type="button" data-xx-like>♡ 点赞</button>
+            <button class="xx-mini-btn" type="button" data-xx-fav>♡ 收藏</button>
+          </div>
+        </article>
+
+        <article class="xx-text-item">
+          <span class="xx-text-index">04</span>
+          <div class="xx-text-item-body">
+            <h4>行业观察：一支舞蹈视频的成本到底花在哪里</h4>
+            <p>把摄影、灯光、音乐授权、后期与场地逐项拆解，附上三档预算的完整对照表。</p>
+            <div class="xx-meta"><span>标签：行业观察 · 商业</span><span>作者：边录工作室</span><span>播放 18.7 万</span><span>点赞 1.1 万</span><span>收藏 9,318</span></div>
+          </div>
+          <div class="xx-item-actions">
+            <button class="xx-mini-btn" type="button" data-xx-like>♡ 点赞</button>
+            <button class="xx-mini-btn" type="button" data-xx-fav>♡ 收藏</button>
+          </div>
+        </article>
+
+        <article class="xx-text-item">
+          <span class="xx-text-index">05</span>
+          <div class="xx-text-item-body">
+            <h4>治愈影像：雨天练习室的四十分钟</h4>
+            <p>没有台词，只有雨声、风扇和重复的八拍。适合在通勤路上安静看完。</p>
+            <div class="xx-meta"><span>标签：治愈影像 · 日常记录</span><span>作者：林见夏</span><span>播放 15.2 万</span><span>点赞 9,804</span><span>收藏 4,215</span></div>
+          </div>
+          <div class="xx-item-actions">
+            <button class="xx-mini-btn" type="button" data-xx-like>♡ 点赞</button>
+            <button class="xx-mini-btn" type="button" data-xx-fav>♡ 收藏</button>
+          </div>
+        </article>
+
+        <article class="xx-text-item">
+          <span class="xx-text-index">06</span>
+          <div class="xx-text-item-body">
+            <h4>实用技巧：手机也能拍出稳定跟拍镜头的五个方法</h4>
+            <p>不使用任何专业稳定器，靠身体与场地完成推、移、跟、升、绕的现场示范。</p>
+            <div class="xx-meta"><span>标签：实用技巧 · 拍摄</span><span>作者：沈禾</span><span>播放 13.9 万</span><span>点赞 8,650</span><span>收藏 7,004</span></div>
+          </div>
+          <div class="xx-item-actions">
+            <button class="xx-mini-btn" type="button" data-xx-like>♡ 点赞</button>
+            <button class="xx-mini-btn" type="button" data-xx-fav>♡ 收藏</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 专题企划 -->
+  <section class="xx-section" id="topics" aria-labelledby="xx-topics-title">
+    <div class="xx-wrap">
+      <div class="xx-section-head">
+        <div>
+          <span class="xx-eyebrow">TOPICS / 专题企划</span>
+          <h2 id="xx-topics-title">品牌专题与<em>长期企划</em></h2>
+        </div>
+        <p class="xx-section-desc">炫舞世家围绕街舞文化持续运营三个长期专题，每月固定更新，接受社区投稿与共创。</p>
+      </div>
+
+      <div class="xx-topic-grid">
+        <article class="xx-topic">
+          <div class="xx-topic-top">
+            <span class="xx-topic-status">更新中 · 第 5 集</span>
+            <h3>《城市地胶》城市探索计划</h3>
+            <p>把舞台搬到真实城市，寻找每座城市里最值得跳一支舞的空地。</p>
+          </div>
+          <ul>
+            <li>第 5 集：过街天桥上的十七级台阶</li>
+            <li>第 4 集：凌晨四点的旧工厂回声</li>
+            <li>第 3 集：菜市场收摊后的九分钟</li>
+          </ul>
+        </article>
+
+        <article class="xx-topic">
+          <div class="xx-topic-top">
+            <span class="xx-topic-status">更新中 · 第 7 集</span>
+            <h3>《第一支舞》新人扶持企划</h3>
+            <p>为从没拍过作品的舞者提供一次专业拍摄机会与正版音乐授权。</p>
+          </div>
+          <ul>
+            <li>第 7 集：一个会计的周末舞台</li>
+            <li>第 6 集：从练习室角落走到画面中央</li>
+            <li>第 5 集：四十岁重新开始学律动</li>
+          </ul>
+        </article>
+
+        <article class="xx-topic">
+          <div class="xx-topic-top">
+            <span class="xx-topic-status">更新中 · 第 3 集</span>
+            <h3>《节拍之间》幕后访谈录</h3>
+            <p>与编舞、摄影、音乐制作人对话，记录一支作品背后的完整协作链。</p>
+          </div>
+          <ul>
+            <li>第 3 集：和调色师聊一场夜戏</li>
+            <li>第 2 集：音乐授权是怎么谈下来的</li>
+            <li>第 1 集：编舞为什么先写结构表</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S5 创作者矩阵（双列简介） -->
+  <section class="xx-section" id="authors" aria-labelledby="xx-authors-title" style="padding-top:0">
+    <div class="xx-wrap">
+      <div class="xx-section-head">
+        <div>
+          <span class="xx-eyebrow">CREATORS / 创作者矩阵</span>
+          <h2 id="xx-authors-title">炫舞世家<em>签约与特邀创作者</em></h2>
+        </div>
+        <p class="xx-section-desc">六位持续在社区输出的创作者，覆盖编舞、教程、影像与行业观察。点击“资料”可查看完整档案。</p>
+      </div>
+
+      <div class="xx-author-grid">
+        <article class="xx-author">
+          <div class="xx-avatar xx-av-a">夏</div>
+          <div>
+            <h3>夏柏 <span>厂牌主理</span></h3>
+            <div class="xx-author-field">擅长：编舞 · 成品舞 · 舞台影像</div>
+            <p>炫舞世家夏柏特别版主理人，从业十二年。习惯在纸上画队形代替写文字，坚持把呼吸声留在最终音轨里。作品以连续长镜头和现场感见长，带出过四十余位新人舞者。</p>
+            <div class="xx-author-foot"><span>作品 86</span><span>粉丝 24.6 万</span><button type="button" data-xx-author="夏柏｜炫舞世家厂牌主理人，十二年编舞经验，擅长成品舞与舞台长镜头影像，代表作《破拍》《回声》。">查看资料</button></div>
+          </div>
+        </article>
+
+        <article class="xx-author">
+          <div class="xx-avatar xx-av-b">岚</div>
+          <div>
+            <h3>阿岚 <span>官方合作</span></h3>
+            <div class="xx-author-field">擅长：教程干货 · 装备测评</div>
+            <p>把每个动作拆成可以量化的角度与时长的教程作者。做过三百多次地胶防滑实测，被社区称为“最会做表格的舞者”。教学风格耐心、精确，尤其适合零基础学员。</p>
+            <div class="xx-author-foot"><span>作品 132</span><span>粉丝 19.3 万</span><button type="button" data-xx-author="阿岚｜教程与测评作者，擅长把舞蹈动作量化为可复现的训练步骤，装备测评以严谨著称。">查看资料</button></div>
+          </div>
+        </article>
+
+        <article class="xx-author">
+          <div class="xx-avatar xx-av-c">屿</div>
+          <div>
+            <h3>周屿 <span>特邀创作者</span></h3>
+            <div class="xx-author-field">擅长：城市探索 · 在地文化</div>
+            <p>带着相机在城市里寻找可以跳舞的空地。偏爱清晨与收摊后的街道，认为城市的声音本身就是最好的配乐。长期记录在地文化与传统鼓乐。</p>
+            <div class="xx-author-foot"><span>作品 64</span><span>粉丝 13.8 万</span><button type="button" data-xx-author="周屿｜城市探索作者，聚焦在地文化与街头空间，善于将传统声音与电子节拍并置。">查看资料</button></div>
+          </div>
+        </article>
+
+        <article class="xx-author">
+          <div class="xx-avatar xx-av-d">边</div>
+          <div>
+            <h3>边录工作室 <span>制作伙伴</span></h3>
+            <div class="xx-author-field">擅长：创作幕后 · 品牌影像</div>
+            <p>一支专注舞蹈影像的小型制作团队，负责炫舞世家多支官方正片的拍摄与后期。相信好作品来自流程，习惯把每个环节写成可复用的清单。</p>
+            <div class="xx-author-foot"><span>作品 47</span><span>粉丝 9.6 万</span><button type="button" data-xx-author="边录工作室｜舞蹈影像制作团队，承接官方正片的摄影、灯光与后期，擅长标准化制作流程。">查看资料</button></div>
+          </div>
+        </article>
+
+        <article class="xx-author">
+          <div class="xx-avatar xx-av-e">禾</div>
+          <div>
+            <h3>沈禾 <span>内容编辑</span></h3>
+            <div class="xx-author-field">擅长：人物访谈 · 实用技巧</div>
+            <p>炫舞世家内容编辑与访谈主持，负责“节拍之间”专题。提问直接、不绕弯，擅长让对方说出真实经历，也拍摄面向新手的手机影像技巧。</p>
+            <div class="xx-author-foot"><span>作品 58</span><span>粉丝 11.2 万</span><button type="button" data-xx-author="沈禾｜内容编辑与访谈主持，负责品牌访谈专题，同时输出面向新手的拍摄实用技巧。">查看资料</button></div>
+          </div>
+        </article>
+
+        <article class="xx-author">
+          <div class="xx-avatar xx-av-f">见</div>
+          <div>
+            <h3>林见夏 <span>社区创作者</span></h3>
+            <div class="xx-author-field">擅长：日常记录 · 治愈影像</div>
+            <p>白天上班，晚上练舞。作品大多是练习室的角落、风扇、雨声与重复的八拍，被社区称为“下班后的四十分钟”。她相信记录本身就是陪伴。</p>
+            <div class="xx-author-foot"><span>作品 73</span><span>粉丝 8.4 万</span><button type="button" data-xx-author="林见夏｜社区创作者，以练习室日常与治愈影像为主，作品节奏舒缓，强调真实记录。">查看资料</button></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- S6 榜单 + 评价 -->
+  <section class="xx-section" id="rank" aria-labelledby="xx-rank-title" style="padding-top:0">
+    <div class="xx-wrap">
+      <div class="xx-section-head">
+        <div>
+          <span class="xx-eyebrow">DATA / 数据榜单与口碑</span>
+          <h2 id="xx-rank-title">炫舞世家<em>榜单与用户评价</em></h2>
+        </div>
+        <p class="xx-section-desc">榜单按近三十天站内真实播放、收藏与互动加权计算，每周一更新，接受社区监督。</p>
+      </div>
+
+      <div class="xx-duo">
+        <div class="xx-rank">
+          <div class="xx-rank-head">
+            <h3>本周榜单</h3>
+            <div class="xx-rank-tabs" role="tablist">
+              <button type="button" class="on" data-xx-tab="hot">热度</button>
+              <button type="button" data-xx-tab="new">新人</button>
+              <button type="button" data-xx-tab="rep">口碑</button>
+            </div>
+          </div>
+          <div class="xx-rank-list" id="xx-rank-list">
+            <div class="xx-rank-item"><span class="xx-rank-no">1</span><span class="xx-rank-name">《破拍》官方正片<small>夏柏 · 编舞作品</small></span><span class="xx-rank-val">86.2 万</span></div>
+            <div class="xx-rank-item"><span class="xx-rank-no">2</span><span class="xx-rank-name">《回声》十人齐舞<small>夏柏 · 团队编排</small></span><span class="xx-rank-val">32.6 万</span></div>
+            <div class="xx-rank-item"><span class="xx-rank-no">3</span><span class="xx-rank-name">五款地胶实测<small>阿岚 · 深度测评</small></span><span class="xx-rank-val">28.9 万</span></div>
+            <div class="xx-rank-item"><span class="xx-rank-no">4</span><span class="xx-rank-name">老街鼓队与电子乐<small>周屿 · 在地文化</small></span><span class="xx-rank-val">21.3 万</span></div>
+            <div class="xx-rank-item"><span class="xx-rank-no">5</span><span class="xx-rank-name">一支舞蹈视频的成本<small>边录工作室 · 行业观察</small></span><span class="xx-rank-val">18.7 万</span></div>
+            <div class="xx-rank-item"><span class="xx-rank-no">6</span><span class="xx-rank-name">雨天练习室四十分钟<small>林见夏 · 治愈影像</small></span><span class="xx-rank-val">15.2 万</span></div>
+          </div>
+        </div>
+
+        <div class="xx-reviews" id="reviews">
+          <article class="xx-review">
+            <div class="xx-review-head"><span class="xx-avatar xx-av-b">陈</span><strong>陈默</strong><span>舞团团长</span></div>
+            <div class="xx-stars">★★★★★</div>
+            <p>带团六年，第一次在一个平台看到这么完整的齐舞计时表和分工模板，直接用在队里排期上了，省了很多吵架。</p>
+          </article>
+
+          <article class="xx-review">
+            <div class="xx-review-head"><span class="xx-avatar xx-av-e">小</span><strong>小满</strong><span>零基础学员</span></div>
+            <div class="xx-stars">★★★★★</div>
+            <p>阿岚的教程是我唯一能跟完的。她会告诉我膝盖不要超过脚尖几度，这种具体的说法对我太重要了。</p>
+          </article>
+
+          <article class="xx-review">
+            <div class="xx-review-head"><span class="xx-avatar xx-av-c">Y</span><strong>Yoko</strong><span>影像爱好者</span></div>
+            <div class="xx-stars">★★★★☆</div>
+            <p>《破拍》的调色我很喜欢，但个人希望后面能出一次拍摄参数分享。整体画面很干净，没有过度炫技。</p>
+          </article>
+
+          <article class="xx-review">
+            <div class="xx-review-head"><span class="xx-avatar xx-av-a">阿</span><strong>阿泽</strong><span>新人创作者</span></div>
+            <div class="xx-stars">★★★★★</div>
+            <p>投稿后第三天就收到修改建议，不是模板回复，是真的有人在看我的片子。这点让我决定留下来继续做。</p>
+          </article>
+
+          <article class="xx-review">
+            <div class="xx-review-head"><span class="xx-avatar xx-av-d">林</span><strong>林木木</strong><span>练习室老板</span></div>
+            <div class="xx-stars">★★★★☆</div>
+            <p>地胶测评那期我们直接拿去给采购看了。如果能加上长期使用的磨损情况会更完整，期待第二期。</p>
+          </article>
+
+          <article class="xx-review">
+            <div class="xx-review-head"><span class="xx-avatar xx-av-f">周</span><strong>周末</strong><span>上班族</span></div>
+            <div class="xx-stars">★★★★★</div>
+            <p>下雨那支片子我看了三遍。没有台词，但很像我自己下班后的样子，安静又有点倔。</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S4 品牌深度解析（800字以上） -->
+  <section class="xx-section" id="story" aria-labelledby="xx-story-title" style="padding-top:0">
+    <div class="xx-wrap">
+      <div class="xx-article">
+        <span class="xx-eyebrow">BRAND / 品牌深度解析</span>
+        <h2 id="xx-story-title">关于炫舞世家与<em>夏柏特别版</em>的完整解读</h2>
+        <p class="xx-article-lead">一个街舞品牌如何在六年里把“作品”当作长期工程来做。以下内容为官方发布，涵盖品牌缘起、内容方法与社区运营三部分。</p>
+
+        <div class="xx-article-grid">
+          <div>
+            <h3>从一间练习室到一个内容生态</h3>
+            <p>炫舞世家起步于城南一间不到六十平米的练习室。最初只有三位舞者和一台二手相机，拍摄的第一支作品因为对焦失败几乎全部报废，但那一次失败让团队意识到，舞蹈影像的难点不在舞，而在如何让镜头听懂节拍。此后两年，团队把大部分收入投入到拍摄设备与灯光上，并坚持每支作品都配上完整的场记、参数与剪辑记录。这些看起来笨拙的积累，后来成为炫舞世家官方网站内容体系的基础，也让夏柏特别版具备了稳定的品质标准。</p>
+            <p>2019 年，夏柏特别版作为厂牌正式成立。命名来自主理人夏柏，但并不意味着个人秀场。相反，特别版从一开始就采用共创机制：编舞、摄影、音乐、后期各自独立署名，每支作品发布时都会完整列出参与者，并把制作方法整理成文。这种透明做法在社区里积累起口碑，也让更多舞者愿意把作品交给平台做官方发布。</p>
+
+            <h3>内容方法：把灵感变成可复用的流程</h3>
+            <p>炫舞世家的内容生产遵循三条固定原则。第一是前期结构化，任何一支作品在开拍前必须完成三张表：队形与镜头对照表、音乐段落表、场地与时间表。第二是音轨优先，团队坚持在拍摄前确定音乐与节拍，再决定镜头运动，避免后期硬凑。第三是保留现场感，除非主题明确要求，不主动抹去呼吸、脚步与地胶摩擦声。这三条原则让作品在观看时保留了真实的身体质感，也让新加入的创作者能在统一框架内表达个性。</p>
+            <p>在此之上，夏柏特别版形成了三种稳定的内容形态：长片主打叙事与调度，适合年度正片；中片主打技术与教学，适合教程和测评；短片主打日常与情绪，适合社区创作者投稿。三种形态共享同一套素材管理与授权流程，从而在保证正版与高清的前提下，把制作成本控制在可负担区间。这也是平台能在六年里持续运营、不断更新精品内容的现实原因。</p>
+
+            <h3>社区运营：让创作者被看见，让观众留下来</h3>
+            <p>炫舞世家的社区并不追求无限扩张。官方长期保持每周两次编辑推荐、每月一次新人扶持、每季度一次主题征集的节奏。新人扶持计划“第一支舞”为从未拍过作品的舞者提供一次专业拍摄与正版音乐授权，不收取费用，但要求公开制作记录。这一机制让平台持续获得新鲜表达，也让老创作者在帮助新人的过程中重新理解自己的方法。用户至上是口号之外的具体安排，比如每一条投稿都会在七个工作日内收到具名回复，哪怕只是指出一个问题。</p>
+            <p>品牌还承担着可被检验的社会责任。平台与多所高校社团保持合作，提供免费的拍摄与版权基础课程；对社区内的公益舞蹈活动提供素材与设备支持；在赛事内容中坚持公开评审标准。团队相信，融合多元表达、尊重原创与版权，是一个街舞内容平台能长久存在的底线。夏柏特别版希望做到的，是让每一个认真跳舞的人，都能在官方网站上找到属于自己的那一格画面。</p>
+            <p class="xx-article-note">本文所述数据来自平台内部统计与公开评审记录，统计周期截至 2026 年 11 月。</p>
+          </div>
+
+          <div>
+            <figure class="xx-article-figure">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 450'%3E%3Cdefs%3E%3ClinearGradient id='st' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231e2430'/%3E%3Cstop offset='1' stop-color='%2332404c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='600' height='450' fill='url(%23st)'/%3E%3Cg stroke='%233ad6ff' stroke-width='2' opacity='0.65' fill='none'%3E%3Cpath d='M70 70 h460'/%3E%3Cpath d='M70 70 v320'/%3E%3C/g%3E%3Cg fill='%23e2ff3a'%3E%3Ccircle cx='160' cy='160' r='10'/%3E%3Ccircle cx='300' cy='230' r='10'/%3E%3Ccircle cx='440' cy='140' r='10'/%3E%3Ccircle cx='380' cy='330' r='10'/%3E%3C/g%3E%3Cg stroke='%23e2ff3a' stroke-width='2' opacity='0.8' fill='none'%3E%3Cpath d='M160 160 L300 230 L440 140'/%3E%3Cpath d='M300 230 L380 330'/%3E%3C/g%3E%3Cg fill='%23a2a2b4'%3E%3Crect x='120' y='200' width='80' height='4' rx='2'/%3E%3Crect x='270' y='270' width='60' height='4' rx='2'/%3E%3Crect x='410' y='180' width='70' height='4' rx='2'/%3E%3Crect x='350' y='370' width='60' height='4' rx='2'/%3E%3C/g%3E%3Ctext x='70' y='420' font-family='Arial' font-size='14' fill='%23a2a2b4' letter-spacing='3'%3ECONTENT MAP%3C/text%3E%3C/svg%3E" alt="品牌内容方法结构图：以节点与连线表示创作流程" width="600" height="450">
+            </figure>
+            <figure class="xx-article-figure" style="margin-bottom:0">
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 600 450'%3E%3Crect width='600' height='450' fill='%23242028'/%3E%3Cg fill='none' stroke='%23ff3a8c' stroke-width='3' opacity='0.75'%3E%3Crect x='90' y='80' width='180' height='120' rx='10'/%3E%3Crect x='330' y='80' width='180' height='120' rx='10'/%3E%3Crect x='90' y='250' width='420' height='120' rx='10'/%3E%3C/g%3E%3Cg fill='%23e2ff3a' opacity='0.9'%3E%3Crect x='110' y='110' width='90' height='6' rx='3'/%3E%3Crect x='110' y='130' width='130' height='6' rx='3'/%3E%3Crect x='350' y='110' width='90' height='6' rx='3'/%3E%3Crect x='350' y='130' width='110' height='6' rx='3'/%3E%3Crect x='110' y='280' width='150' height='6' rx='3'/%3E%3Crect x='110' y='300' width='220' height='6' rx='3'/%3E%3Crect x='110' y='320' width='180' height='6' rx='3'/%3E%3C/g%3E%3C/svg%3E" alt="社区运营机制示意：新人扶持、编辑推荐与主题征集三个模块" width="600" height="450">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 辅助区：动态 / 合作 / 灵感 -->
+  <section class="xx-section" id="updates" aria-labelledby="xx-updates-title" style="padding-top:0">
+    <div class="xx-wrap">
+      <div class="xx-section-head">
+        <div>
+          <span class="xx-eyebrow">NEWS / 企业动态与共创</span>
+          <h2 id="xx-updates-title">炫舞世家<em>品牌动态</em>与合作</h2>
+        </div>
+        <p class="xx-section-desc">官方发布节奏、合作品牌与创作灵感工具，帮助社区创作者更快进入状态。</p>
+      </div>
+
+      <div class="xx-tri">
+        <div>
+          <h3 style="font-size:16px;font-weight:800;margin-bottom:14px">企业动态</h3>
+          <div class="xx-news">
+            <article class="xx-news-item">
+              <time>2026-11-18</time>
+              <h4>夏柏特别版 Vol.07 正片上线</h4>
+              <p>4K 版本同步开放下载，附完整场记与镜头参数表。</p>
+            </article>
+            <article class="xx-news-item">
+              <time>2026-11-10</time>
+              <h4>冬季新人赛报名开启</h4>
+              <p>面向零基础与一年内学员，设置编舞与即兴两个组别，12 月 6 日截止。</p>
+            </article>
+            <article class="xx-news-item">
+              <time>2026-10-29</time>
+              <h4>创作者扶持计划第二期</h4>
+              <p>开放 60 个名额，包含正版音乐授权与一次专业拍摄支持。</p>
+            </article>
+            <article class="xx-news-item">
+              <time>2026-10-12</time>
+              <h4>官方网站内容库升级</h4>
+              <p>新增按舞种、时长与制作方式三维筛选，检索速度提升明显。</p>
+            </article>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size:16px;font-weight:800;margin-bottom:14px">合作品牌与伙伴</h3>
+          <div class="xx-partner-grid">
+            <div class="xx-partner"><strong>边录工作室</strong><span>官方影像制作</span></div>
+            <div class="xx-partner"><strong>城南练习室</strong><span>场地与训练支持</span></div>
+            <div class="xx-partner"><strong>节拍音乐库</strong><span>正版音乐授权</span></div>
+            <div class="xx-partner"><strong>市青年文化馆</strong><span>公益课程合作</span></div>
+          </div>
+        </div>
+
+        <div>
+          <h3 style="font-size:16px;font-weight:800;margin-bottom:14px">创作灵感</h3>
+          <div class="xx-card" style="padding:18px">
+            <div class="xx-tags" style="margin-bottom:12px">
+              <span class="xx-tag xx-tag-hot">脚本灵感</span>
+              <span class="xx-tag">剪辑思路</span>
+            </div>
+            <ul style="display:grid;gap:10px;font-size:13px;color:var(--xx-sub)">
+              <li>▸ 用一件旧物串联三段独舞，结尾回到同一个角落。</li>
+              <li>▸ 把整支舞的镜头固定在一个机位，只靠队形变化推进。</li>
+              <li>▸ 以环境声为节拍，先收音再编舞。</li>
+              <li>▸ 尝试一镜到底的推门镜头，把城市当作舞台布景。</li>
+            </ul>
+            <button class="xx-btn xx-btn-ghost" type="button" data-xx-open="submit" style="margin-top:16px;width:100%">上传我的创意</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- S7 FAQ + 投稿 -->
+  <section class="xx-section" id="faq" aria-labelledby="xx-faq-title" style="padding-top:0">
+    <div class="xx-wrap">
+      <div class="xx-cta" style="margin-bottom:36px">
+        <div>
+          <h2>把你的第一支舞，交给炫舞世家</h2>
+          <p>官方网站长期开放投稿。原创作品可申请正版音乐授权与官方推荐，优秀作品将进入夏柏特别版特别企划。我们提供的不只是曝光，还有完整的制作建议。</p>
+        </div>
+        <div class="xx-cta-actions">
+          <button class="xx-btn xx-btn-neon" type="button" data-xx-open="submit">提交作品</button>
+          <button class="xx-btn xx-btn-ghost" type="button" data-xx-open="join">加入社区</button>
+        </div>
+      </div>
+
+      <div class="xx-section-head">
+        <div>
+          <span class="xx-eyebrow">FAQ / 常见问题</span>
+          <h2 id="xx-faq-title">关于炫舞世家<em>你可能想问的</em></h2>
+        </div>
+        <p class="xx-section-desc">投稿、版权、赛事与观看相关的六个高频问题，点击任一条展开完整回答。</p>
+      </div>
+
+      <div class="xx-faq">
+        <details open>
+          <summary>投稿有什么具体的格式要求？</summary>
+          <p>建议提交 16:9 横版、1080P 以上、码率不低于 8Mbps 的成片，同时附上音乐来源、参与者名单与至少一张场记照。若使用他人音乐，请提供授权证明或选择平台正版音乐库。编辑会在七个工作日内给出具名反馈。</p>
+        </details>
+        <details>
+          <summary>平台提供正版音乐授权吗？</summary>
+          <p>提供。签约创作者与入选扶持计划的作者可免费申请合作音乐库中的曲目授权，用于平台内发布与官方宣传。商业二次使用需另行申请，具体条款在授权页面完整列明。</p>
+        </details>
+        <details>
+          <summary>新人赛的评审标准是什么？</summary>
+          <p>编舞组看重结构完整度、音乐贴合度与表达可信度；即兴组看重心控制、节拍反应与现场交流。所有评分表在赛后公开，接受复议申请。</p>
+        </details>
+        <details>
+          <summary>作品发布后可以修改吗？</summary>
+          <p>可以。发布后 30 天内支持替换源文件与修改简介，修改记录对作者可见。涉及版权信息的修改需经过人工复核。</p>
+        </details>
+        <details>
+          <summary>如何申请成为官方合作创作者？</summary>
+          <p>先在社区持续发布至少五支原创作品，然后通过页面底部联系方式提交申请。审核关注作品稳定性、制作规范与社区互动质量，不以粉丝量为唯一标准。</p>
+        </details>
+        <details>
+          <summary>观看高清内容需要付费吗？</summary>
+          <p>不需要。官方发布的所有正片与教程均可免费观看高清版本。部分专题的素材包与工程文件面向签约创作者开放下载。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- S8 页脚 -->
+<footer class="xx-footer">
+  <div class="xx-wrap">
+    <div class="xx-footer-grid">
+      <div class="xx-footer-brand">
+        <a href="#top" class="xx-logo" aria-label="返回页面顶部">
+          <span class="xx-logo-mark">炫</span>
+          <span class="xx-logo-text"><strong>炫舞世家</strong><span>夏柏特别版</span></span>
+        </a>
+        <p>炫舞世家官方网站，街舞垂直领域品牌视频门户。坚持原创与正版，持续运营高品质内容生态，与创作者共同成长。</p>
+      </div>
+      <div>
+        <h4>内容</h4>
+        <ul>
+          <li><a href="#focus">焦点内容</a></li>
+          <li><a href="#videos">热门视频</a></li>
+          <li><a href="#topics">专题企划</a></li>
+          <li><a href="#story">品牌深度解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>社区</h4>
+        <ul>
+          <li><a href="#authors">创作者矩阵</a></li>
+          <li><a href="#rank">数据榜单</a></li>
+          <li><a href="#reviews">用户评价</a></li>
+          <li><a href="#faq">常见问题</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与</h4>
+        <ul>
+          <li><a href="#faq" data-xx-open="submit">作品投稿</a></li>
+          <li><a href="#faq" data-xx-open="join">加入社区</a></li>
+          <li><a href="#updates">企业动态</a></li>
+          <li><a href="#top" data-xx-copy>复制本页链接</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="xx-footer-bottom">
+      <span>炫舞世家 官方网站 · 夏柏特别版 · 版权所有 · 持续运营中</span>
+      <span>内容备案号：炫舞内容备 2026-118 号 · <a href="#top">回到顶部</a></span>
+    </div>
+  </div>
+</footer>
+
+<!-- 回到顶部 -->
+<button class="xx-top" id="xx-top" type="button" aria-label="回到顶部">↑</button>
+
+<!-- Toast -->
+<div class="xx-toast" id="xx-toast" role="status" aria-live="polite"></div>
+
+<!-- 弹窗：投稿 -->
+<div class="xx-modal" id="xx-modal-submit" aria-hidden="true">
+  <div class="xx-modal-box" role="dialog" aria-modal="true" aria-labelledby="xx-modal-submit-title">
+    <button class="xx-modal-close" type="button" data-xx-close aria-label="关闭">×</button>
+    <h3 id="xx-modal-submit-title">提交作品</h3>
+    <p>填写作品基本信息，编辑会在七个工作日内给出具名反馈。</p>
+    <div class="xx-field"><label for="xx-sub-name">作品名称</label><input id="xx-sub-name" type="text" placeholder="例如：破拍 · 练习室版"></div>
+    <div class="xx-field"><label for="xx-sub-author">作者昵称</label><input id="xx-sub-author" type="text" placeholder="你的创作者名称"></div>
+    <div class="xx-field"><label for="xx-sub-note">作品简介</label><textarea id="xx-sub-note" rows="3" placeholder="舞种、时长、音乐来源与创作想法"></textarea></div>
+    <div class="xx-modal-actions">
+      <button class="xx-btn xx-btn-ghost" type="button" data-xx-close>取消</button>
+      <button class="xx-btn xx-btn-neon" type="button" id="xx-sub-send">提交</button>
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗：加入社区 -->
+<div class="xx-modal" id="xx-modal-join" aria-hidden="true">
+  <div class="xx-modal-box" role="dialog" aria-modal="true" aria-labelledby="xx-modal-join-title">
+    <button class="xx-modal-close" type="button" data-xx-close aria-label="关闭">×</button>
+    <h3 id="xx-modal-join-title">加入炫舞世家社区</h3>
+    <p>留下联系方式，我们会发送社区指南与本月活动日历。</p>
+    <div class="xx-field"><label for="xx-join-name">昵称</label><input id="xx-join-name" type="text" placeholder="怎么称呼你"></div>
+    <div class="xx-field"><label for="xx-join-mail">邮箱</label><input id="xx-join-mail" type="email" placeholder="用于接收社区通知"></div>
+    <div class="xx-modal-actions">
+      <button class="xx-btn xx-btn-ghost" type="button" data-xx-close>取消</button>
+      <button class="xx-btn xx-btn-neon" type="button" id="xx-join-send">加入</button>
+    </div>
+  </div>
+</div>
+
+<!-- 弹窗：作者资料 -->
+<div class="xx-modal" id="xx-modal-author" aria-hidden="true">
+  <div class="xx-modal-box" role="dialog" aria-modal="true" aria-labelledby="xx-modal-author-title">
+    <button class="xx-modal-close" type="button" data-xx-close aria-label="关闭">×</button>
+    <h3 id="xx-modal-author-title">创作者资料</h3>
+    <p id="xx-modal-author-body" style="font-size:13.5px;color:#c6c6d6;line-height:1.8">-</p>
+    <div class="xx-modal-actions">
+      <button class="xx-btn xx-btn-neon" type="button" data-xx-close>知道了</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- Toast ---------- */
+  var toastEl = document.getElementById('xx-toast');
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove('show'); }, 2200);
+  }
+
+  /* ---------- 移动端导航 ---------- */
+  var burger = document.getElementById('xx-burger');
+  var mobileNav = document.getElementById('xx-mobile-nav');
+  burger.addEventListener('click', function(){
+    var open = mobileNav.classList.toggle('open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  mobileNav.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){
+      mobileNav.classList.remove('open');
+      burger.setAttribute('aria-expanded','false');
+    });
+  });
+
+  /* ---------- 搜索反馈 ---------- */
+  var searchInput = document.getElementById('xx-search-input');
+  var searchBtn = document.getElementById('xx-search-btn');
+  var feedback = document.getElementById('xx-search-feedback');
+  var searchIndex = [
+    {k:'破拍', t:'夏柏特别版 Vol.07《破拍》官方正片', id:'focus'},
+    {k:'编舞', t:'《破拍》与《回声》等编舞作品', id:'focus'},
+    {k:'教程', t:'律动入门第一课：重心转移', id:'videos'},
+    {k:'测评', t:'五款练习室地胶深度测评', id:'videos'},
+    {k:'城市', t:'《城市地胶》城市探索计划', id:'topics'},
+    {k:'新人', t:'《第一支舞》新人扶持企划', id:'topics'},
+    {k:'访谈', t:'《节拍之间》幕后访谈录', id:'topics'},
+    {k:'夏柏', t:'创作者 夏柏 · 厂牌主理', id:'authors'},
+    {k:'榜单', t:'本周热度榜、新人榜与口碑榜', id:'rank'},
+    {k:'评价', t:'社区用户评价与评分摘要', id:'reviews'},
+    {k:'故事', t:'品牌深度解析与内容方法', id:'story'},
+    {k:'动态', t:'企业动态与官方发布', id:'updates'},
+    {k:'报名', t:'冬季新人赛报名', id:'updates'},
+    {k:'投稿', t:'作品投稿入口与格式要求', id:'faq'},
+    {k:'版权', t:'正版音乐授权说明', id:'faq'}
+  ];
+  function doSearch(){
+    var q = (searchInput.value || '').trim();
+    if(!q){
+      feedback.textContent = '请输入关键词，例如：破拍、教程、测评、榜单';
+      feedback.classList.add('show');
+      return;
+    }
+    var hits = searchIndex.filter(function(item){
+      return item.k.indexOf(q) > -1 || item.t.indexOf(q) > -1;
+    });
+    if(hits.length){
+      feedback.textContent = '找到 ' + hits.length + ' 条相关内容：' + hits.slice(0,3).map(function(h){return h.t;}).join('；') + '。点击搜索按钮可跳转。';
+      feedback.classList.add('show');
+      feedback.setAttribute('data-target', hits[0].id);
+    } else {
+      feedback.textContent = '未找到「' + q + '」相关条目，试试：编舞、教程、城市、访谈、投稿。';
+      feedback.classList.add('show');
+      feedback.setAttribute('data-target','');
+    }
+  }
+  searchBtn.addEventListener('click', function(){
+    var target = feedback.getAttribute('data-target');
+    if(feedback.classList.contains('show') && target){
+      var el = document.getElementById(target);
+      if(el){ el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      feedback.classList.remove('show');
+      feedback.setAttribute('data-target','');
+    } else {
+      doSearch();
+    }
+  });
+  searchInput.addEventListener('input', function(){
+    if(!searchInput.value.trim()){ feedback.classList.remove('show'); }
+  });
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ doSearch(); }
+  });
+
+  /* ---------- 点赞 / 收藏 ---------- */
+  document.querySelectorAll('[data-xx-like]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var liked = btn.classList.toggle('xx-liked');
+      var b = btn.querySelector('b');
+      if(b){
+        var n = parseInt(b.textContent.replace(/[^\d]/g,''),10) || 0;
+        b.textContent = liked ? (n + 1) : (n - 1);
+      }
+      btn.firstChild.nodeValue = liked ? '♥ 已赞 ' : '♡ 点赞 ';
+      toast(liked ? '已点赞，感谢支持原创内容' : '已取消点赞');
+    });
+  });
+  document.querySelectorAll('[data-xx-fav]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var on = btn.classList.toggle('xx-faved');
+      btn.textContent = on ? '♥ 已收藏' : '♡ 收藏';
+      toast(on ? '已加入收藏夹，可在个人中心查看' : '已取消收藏');
+    });
+  });
+
+  /* ---------- 复制链接 ---------- */
+  function copyLink(){
+    var text = document.title;
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        toast('链接已复制，可分享给同好');
+      }).catch(function(){
+        toast('复制失败，请手动选择页面内容分享');
+      });
+    } else {
+      toast('当前环境不支持自动复制，请手动分享');
+    }
+  }
+  document.querySelectorAll('[data-xx-copy]').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      copyLink();
+    });
+  });
+
+  /* ---------- 榜单切换 ---------- */
+  var rankData = {
+    hot: [
+      ['《破拍》官方正片','夏柏 · 编舞作品','86.2 万'],
+      ['《回声》十人齐舞','夏柏 · 团队编排','32.6 万'],
+      ['五款地胶实测','阿岚 · 深度测评','28.9 万'],
+      ['老街鼓队与电子乐','周屿 · 在地文化','21.3 万'],
+      ['一支舞蹈视频的成本','边录工作室 · 行业观察','18.7 万'],
+      ['雨天练习室四十分钟','林见夏 · 治愈影像','15.2 万']
+    ],
+    new: [
+      ['第一次独自拍片','小满 · 新人投稿','3.2 万'],
+      ['练习室角落的八拍','阿泽 · 日常记录','2.7 万'],
+      ['周末舞台计划','陈默 · 舞团记录','2.4 万'],
+      ['我为什么开始跳舞','周末 · 情感故事','2.1 万'],
+      ['一把旧音响的重生','林木木 · 手作DIY','1.9 万'],
+      ['下班后的四十分钟','林见夏 · 治愈影像','1.6 万']
+    ],
+    rep: [
+      ['律动入门第一课','阿岚 · 教程干货','9.6 分'],
+      ['《节拍之间》第 3 集','沈禾 · 人物访谈','9.4 分'],
+      ['城市地胶 第 5 集','周屿 · 城市探索','9.2 分'],
+      ['五款地胶实测','阿岚 · 深度测评','9.1 分'],
+      ['《破拍》官方正片','夏柏 · 编舞作品','9.0 分'],
+      ['雨天练习室四十分钟','林见夏 · 治愈影像','8.9 分']
+    ]
+  };
+  var rankList = document.getElementById('xx-rank-list');
+  document.querySelectorAll('[data-xx-tab]').forEach(function(tab){
+    tab.addEventListener('click', function(){
+      document.querySelectorAll('[data-xx-tab]').forEach(function(t){ t.classList.remove('on'); });
+      tab.classList.add('on');
+      var key = tab.getAttribute('data-xx-tab');
+      var data = rankData[key] || rankData.hot;
+      rankList.innerHTML = data.map(function(item, i){
+        return '<div class="xx-rank-item"><span class="xx-rank-no">' + (i+1) + '</span>' +
+          '<span class="xx-rank-name">' + item[0] + '<small>' + item[1] + '</small></span>' +
+          '<span class="xx-rank-val">' + item[2] + '</span></div>';
+      }).join('');
+    });
+  });
+
+  /* ---------- 弹窗通用 ---------- */
+  var lastFocus = null;
+  function openModal(id){
+    var m = document.getElementById('xx-modal-' + id);
+    if(!m) return;
+    lastFocus = document.activeElement;
+    m.classList.add('open');
+    m.setAttribute('aria-hidden','false');
+    var first = m.querySelector('input, textarea, button');
+    if(first) first.focus();
+  }
+  function closeModal(m){
+    m.classList.remove('open');
+    m.setAttribute('aria-hidden','true');
+    if(lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+  document.querySelectorAll('[data-xx-open]').forEach(function(el){
+    el.addEventListener('click', function(e){
+      e.preventDefault();
+      openModal(el.getAttribute('data-xx-open'));
+    });
+  });
+  document.querySelectorAll('.xx-modal').forEach(function(m){
+    m.addEventListener('click', function(e){
+      if(e.target === m){ closeModal(m); }
+    });
+    m.querySelectorAll('[data-xx-close]').forEach(function(c){
+      c.addEventListener('click', function(){ closeModal(m); });
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){
+      document.querySelectorAll('.xx-modal.open').forEach(function(m){ closeModal(m); });
+    }
+  });
+
+  /* ---------- 作者资料弹窗 ---------- */
+  document.querySelectorAll('[data-xx-author]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      document.getElementById('xx-modal-author-title').textContent = '创作者资料';
+      document.getElementById('xx-modal-author-body').textContent = btn.getAttribute('data-xx-author');
+      openModal('author');
+    });
+  });
+
+  /* ---------- 表单提交 ---------- */
+  function bindSend(btnId, fields, successMsg){
+    var btn = document.getElementById(btnId);
+    if(!btn) return;
+    btn.addEventListener('click', function(){
+      var ok = true;
+      fields.forEach(function(id){
+        var el = document.getElementById(id);
+        if(el && !el.value.trim()){
+          ok = false;
+          el.style.borderColor = '#ff3a8c';
+        } else if(el){
+          el.style.borderColor = '';
+        }
+      });
+      if(!ok){ toast('请填写完整信息后再提交'); return; }
+      closeModal(btn.closest('.xx-modal'));
+      toast(successMsg);
+      fields.forEach(function(id){
+        var el = document.getElementById(id);
+        if(el) el.value = '';
+      });
+    });
+  }
+  bindSend('xx-sub-send', ['xx-sub-name','xx-sub-author','xx-sub-note'], '作品已提交，编辑将在七个工作日内回复');
+  bindSend('xx-join-send', ['xx-join-name','xx-join-mail'], '已收到申请，社区指南将发送至你的邮箱');
+
+  /* ---------- 回到顶部 ---------- */
+  var topBtn = document.getElementById('xx-top');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 600){ topBtn.classList.add('show'); }
+    else { topBtn.classList.remove('show'); }
+  }, {passive:true});
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+})();
+</script>
+</body>
+              </html>
